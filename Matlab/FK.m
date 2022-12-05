@@ -2,6 +2,7 @@ function [A] = FK(th)
     % FK - Forward Kinematics - nonmodified table
     
     % call DH-Parameters from ./DH_params function  
+    % alfa, translation, length
     [o,d,a] = DH_params;
     
     for i=1:length(th)
