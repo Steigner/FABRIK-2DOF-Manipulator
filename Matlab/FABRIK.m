@@ -1,6 +1,13 @@
 function [p] = FABRIK(p, n, t, tol)
     % FABRIK - Forward And Backward Reaching Inverse Kinematics
-    
+    % :param p, n, t, tol: 
+    %   init points: double matrix, 
+    %   length of input angles: int, 
+    %   target: double array, 
+    %   tolerance: double 
+    % :returns: 
+    %   computed target position points: double matrix
+
     % the distances between each joint 
     d = zeros(1,n);
     for i=1:n-1

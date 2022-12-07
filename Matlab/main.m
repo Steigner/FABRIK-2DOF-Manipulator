@@ -48,8 +48,8 @@ while 1
     
     disp("[INFO] Start Computation")
     tic;
-    
-    % call FABRIK compute 
+ 
+    % call FABRIK compute from ./FABRIK function  
     p_ = FABRIK(p, len, goal, tolerance);
     disp("[INFO] End Computation - time: " + string(toc));
     

@@ -1,6 +1,10 @@
 function [A] = FK(th)
     % FK - Forward Kinematics - nonmodified table
-    
+    % :param: 
+    %   th - thn: double array - radians  
+    % :returns: 
+    %   DH table: double matrix
+
     % call DH-Parameters from ./DH_params function  
     % alfa, translation, length
     [o,d,a] = DH_params;
