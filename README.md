@@ -8,7 +8,7 @@ Software
 
 ### Description
 
-This project focuses on the implementation of the FABRIK (Forward And Backward Reaching Inverse Kinematics) algorithm. The implemented algorithm is an unmodified version of the original publication. It is a simple demonstration of the use of the algorithm on a 2DOF SCARA ABB IRB 910SC manipulator.
+This project focuses on the implementation of the FABRIK (Forward And Backward Reaching Inverse Kinematics) algorithm. The implemented algorithm is an unmodified version of the [original publication](https://doi.org/10.1016/j.gmod.2011.05.003). It is a simple demonstration of the use of the algorithm on a 2DOF SCARA ABB IRB 910SC manipulator.
 
 * IK - FABRIK (Forward And Backward Reaching Inverse Kinematics)
 * FK - unmodified D-H (Denavit–Hartenberg) Table
