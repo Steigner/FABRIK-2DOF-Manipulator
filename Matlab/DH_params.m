@@ -7,4 +7,3 @@ function [alfa,d,a] = DH_params
     % arm length
     a = [0.0, 0.25, 0.35];
 end
-
