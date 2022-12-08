@@ -4,6 +4,7 @@
 Software
 ------------------------------------
 | Matlab 2022b
+| Octave 7.3.0
 ```
 
 ### Description
@@ -17,6 +18,8 @@ This project focuses on the implementation of the **FABRIK (Forward And Backward
 * Possibility Changing Target in Plot 
 
 Within the application, new targets can be set by clicking into the chart. The program will automatically recalculate the result.
+
+:heavy_exclamation_mark: **The code was also tested in Octave**
 
 Run **./main.m** script in Matlab Desktop / Cloud or from terminal: 
 

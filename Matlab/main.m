@@ -53,7 +53,7 @@ while 1
     tic; 
     % call FABRIK compute from ./FABRIK function  
     p_ = FABRIK(p, len, goal, tolerance);
-    disp("[INFO] End Computation - time: " + string(toc));
+    fprintf("[INFO] End Computation - time: %.4f \n", toc);
     
     % compute result angle 2DOF SCARA robot
     th1 = atan2(p_(2,2) - p_(1,2), p_(2,1) - p_(1,1));
@@ -65,8 +65,8 @@ while 1
     th1_deg = rad2deg(th1);
     th2_deg = rad2deg(th2);
     
-    disp("[INFO] Theta1: " + string(th1_deg));
-    disp("[INFO] Theta2: " + string(th2_deg));
+    fprintf("[INFO] Theta1: %.2f \n", th1_deg);
+    fprintf("[INFO] Theta2: %.2f \n", th2_deg);
     
     % set up x and y limits of plot
     xlim([-0.7 0.7]);
@@ -106,7 +106,7 @@ while 1
             p(:,1), ...
             p(:,2), ...
             'LineWidth', 3, ...
-            'Color', [0, 0, 0, 0.5], ...
+            'Color', 'black', ...
             'Marker','o', ...
             'LineStyle','-' ...
         );
@@ -154,19 +154,17 @@ while 1
 
     % click input from plot
     try
-        [x,y,~] = ginput(1); 
+        [x,y,~] = ginput(1);
+        % coordinates from graph set as goal
+        goal(1) = x;
+        goal(2) = y;
+        % delete plots for next computation
+        delete(h1);
+        delete(h2);
+        if show_origin_position
+            delete(h3);
+        end
     catch
         return
-    end
-    
-    % coordinates from graph set as goal
-    goal(1,1) = x;
-    goal(1,2) = y;
-    
-    % delete plots for next computation
-    delete(h1);
-    delete(h2);
-    if show_origin_position
-        delete(h3);
     end
 end
