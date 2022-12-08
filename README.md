@@ -18,7 +18,7 @@ This project focuses on the implementation of the **FABRIK (Forward And Backward
 
 Within the application, new targets can be set by clicking into the chart. The program will automatically recalculate the result.
 
-Run **./main.m** script or from terminal: 
+Run **./main.m** script in Matlab Desktop / Cloud or from terminal: 
 
 ```console
 matlab -nosplash -nodesktop -r main
