@@ -1,6 +1,9 @@
-%% Compute FABRIK SCARA robot
+%% Compute FABRIK 2DOF SCARA robot
 clear;
 clc;
+
+% You can simply change type of SCARA robot for demonstration -> DH params
+name = 'ABB IRB 910SC (SCARA)';
 
 % call DH-Parameters from ./DH_params function  
 [~,~,a] = DH_params;
@@ -47,8 +50,7 @@ while 1
     end
     
     disp("[INFO] Start Computation")
-    tic;
- 
+    tic; 
     % call FABRIK compute from ./FABRIK function  
     p_ = FABRIK(p, len, goal, tolerance);
     disp("[INFO] End Computation - time: " + string(toc));
@@ -72,10 +74,11 @@ while 1
     hold on;
     grid on;
     % title of plot
-    title('ABB IRB 910SC (SCARA)');
+    title(name);
     xlabel('x');
     ylabel('y');
     
+    % plot proccesed positions
     h1 = plot( ...
         p_(:,1), ...
         p_(:,2), ...
@@ -84,6 +87,8 @@ while 1
         'Marker', 'o', ...
         'LineStyle', '-' ...
     );
+
+    % plot goal
     h2 = plot( ...
         goal(1,1), ...
         goal(1,2), ...
