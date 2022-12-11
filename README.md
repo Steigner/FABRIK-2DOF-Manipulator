@@ -29,7 +29,7 @@ matlab -nosplash -nodesktop -r main
 
 ### Demo Example
 
-[Demo Example.webm](https://user-images.githubusercontent.com/54715463/206244516-66396223-90b3-49d5-9f85-70da7663866e.webm)
+https://user-images.githubusercontent.com/54715463/206893383-c45fb66e-e27f-447c-b0a9-fd46335d917f.mp4
 
 ### Future Work
 
