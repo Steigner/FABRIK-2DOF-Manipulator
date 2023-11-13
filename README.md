@@ -34,7 +34,3 @@ https://user-images.githubusercontent.com/54715463/206893383-c45fb66e-e27f-447c-
 ### Future Work
 
 Next steps leads to FABRIK-R (modification FABRIK for robotics arm) and add another programming languages. 
-
-## :information_source: Contacts
-
-:mailbox: m.juricek@outlook.com
